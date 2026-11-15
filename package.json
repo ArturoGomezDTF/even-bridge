@@ -1,0 +1,16 @@
+{
+  "name": "even-bridge",
+  "version": "0.1.0",
+  "description": "Even Bridge: mini agente headless (Raspberry Pi) que imprime comandas ESC/POS en la red local",
+  "main": "src/index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}

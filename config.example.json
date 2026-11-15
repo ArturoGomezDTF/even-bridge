@@ -1,0 +1,5 @@
+{
+  "backendUrl": "https://even-backend-production.up.railway.app",
+  "branchId": "TU_BRANCH_ID",
+  "token": "TU_BRIDGE_TOKEN"
+}
