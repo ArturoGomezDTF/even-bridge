@@ -1,0 +1,18 @@
+[Unit]
+Description=Even Bridge (impresión local)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=even
+WorkingDirectory=/opt/even-bridge
+Environment=EVEN_BRIDGE_CONFIG=/etc/even-bridge/config.json
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=5
+# /dev/usb/lp* pertenece al grupo lp
+SupplementaryGroups=lp
+
+[Install]
+WantedBy=multi-user.target
